@@ -7,4 +7,4 @@
 
 ------------
 
-dkdkdk
+<img src = smart_pot_1.jpg height=400 width=300>
