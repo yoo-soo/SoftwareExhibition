@@ -7,4 +7,4 @@
 
 ------------
 
-<img src = smart_pot_1.jpg height=400 width=300>
+<img src = soil_pump_rgbled_test.mp4 height=400 width=300>
