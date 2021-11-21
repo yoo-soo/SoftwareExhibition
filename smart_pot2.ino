@@ -44,7 +44,7 @@ void pump(int flag){ // 펌프 작동 함수
   stop();
 }
 
-// 워터펌프 물주기 멈춤 함수
+// 워터펌프 물주기 멈춤 함수.
 void stop(){
   digitalWrite(A_1A, LOW);
   digitalWrite(A_2A, LOW);
