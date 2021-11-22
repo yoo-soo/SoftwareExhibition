@@ -9,4 +9,4 @@
 
 <img src = soil_pump_rebled_test.mp4 height=400 width=300>
 
-<img width="80%" src=https://github.com/yoo-soo/SoftwareExhibition/issues/1#issue-1060062131/>
+<img src=https://github.com/yoo-soo/SoftwareExhibition/issues/1#issue-1060062131/>
