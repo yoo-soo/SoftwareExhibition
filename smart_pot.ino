@@ -2,8 +2,8 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-#define rxPin 2
-#define txPin 3
+#define rxPin 2 // 블루투스센서 수신 보내는 핀
+#define txPin 3 // 블루투스센서 수신 받는 핀
 
 LiquidCrystal_I2C lcd(0x27, 16, 2); // SDA = A4, SCL = A5
 SoftwareSerial SwSerial(rxPin, txPin);
@@ -14,7 +14,7 @@ char data;
 
 void setup() {
   // put your setup code here, to run once:
-  analogReference(INTERNAL);
+  analogReference(INTERNAL);  // ADC 참조 전압 1.1V
   Serial.begin(9600);
   SwSerial.begin(9600);
   //Serial.println("Ready..");
@@ -61,26 +61,28 @@ void loop() {
 // RGB LED
 // 블루투스 연동
   if(SwSerial.available()) {
-    char cmd = (char)SwSerial.read();
+    char cmd = (char)SwSerial.read(); // 블루투스 시리얼에서 데이터 읽음
     
-    if(cmd == '1') {
+    if(cmd == '1') {  // 블루투스 시리얼에 1이 들어오면
       Serial.println(cmd);
       digitalWrite(red, HIGH);
       digitalWrite(blue, HIGH);
-    } else if(cmd == '0') {
+      // 불 킴
+    } else if(cmd == '0') { // 블루투스 시리얼에 0이 들어오면
       digitalWrite(red, LOW);
       digitalWrite(blue, LOW);
+      // 불 끔
     }
   }   
 
 // 온도센서 판판한곳 바라보고 왼쪽이 + 젤 오른쪽이 -   
-  float temperature = analogRead(cs) / 9.31;
+  float temperature = analogRead(cs) / 9.31;  // 온도 센서로 온도 읽고 9.31로 나누기 (섭씨로 표현하기 위해)
   
 // LCD
-   lcd.setCursor(0,0); //텍스트가 LCD에 나타날 위치
-   lcd.print("Temperature : ");
+   lcd.setCursor(0,0); // 텍스트가 LCD에 나타날 위치
+   lcd.print("Temperature : "); 
    lcd.print(temperature);
-   lcd.setCursor(0,1);
+   lcd.setCursor(0,1); 
    lcd.print("Sensing...");
 
 }
