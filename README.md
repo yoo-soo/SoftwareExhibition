@@ -3,8 +3,7 @@
 
 ------------
 
-<img src = smart_pot_1.jpg height=400 width=300>  <img src = smart_pot_2.jpg height=400 width=300>
+<img src = 슬라이드0001.jpg height=400 width=300>  <img src = smart_pot_2.jpg height=400 width=300>
 
 ------------
 
-https://github.com/yoo-soo/SoftwareExhibition/issues/3#issue-1060150437
