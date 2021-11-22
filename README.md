@@ -7,4 +7,4 @@
 
 ------------
 
-<img src = soil_pump_rebled_test.mp4 height=400 width=300>
+https://github.com/yoo-soo/SoftwareExhibition/issues/3#issue-1060150437
