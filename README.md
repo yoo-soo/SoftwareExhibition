@@ -18,6 +18,6 @@
 <img src = pptimg/슬라이드0013.jpg height=400 width=650>
 <img src = pptimg/슬라이드0014.jpg height=400 width=650>
 <img src = pptimg/슬라이드0015.jpg height=400 width=650>
-** 시연 영상은 zip파일로 따로 첨부해놓았습니다.
+ + 시연 영상은 zip파일로 따로 첨부해놓았습니다. \
 ------------
 
